@@ -1,0 +1,81 @@
+.Footer {
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 180px;
+  padding: 0 2rem;
+  width: 100%;
+
+  &-inner {
+    display: flex;
+    min-height: 120;
+
+    .logo {
+      width: 144px;
+      height: 144px;
+      margin-right: 1.5rem;
+    }
+
+    .text-logo {
+      font-family: "Pacifico", cursive;
+      font-size: 2.5rem;
+    }
+
+    .social-media,
+    .faqs-inner,
+    .contributers-inner {
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+    }
+  }
+
+  &-inner:nth-child(2) {
+    width: 30%;
+    justify-content: space-between;
+    padding-right: 4rem;
+
+    .faqs {
+      .inner {
+        padding: 0.8rem 0;
+      }
+    }
+
+    .faqs,
+    .contributers {
+      justify-content: space-between;
+      h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+      }
+
+      .inner {
+        display: flex;
+        flex-direction: column;
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .contributers {
+      .inner {
+        span {
+          display: flex;
+          align-items: center;
+          margin-bottom: 0.3rem;
+
+          img {
+            width: 1.5rem;
+            margin-right: 0.5rem;
+          }
+        }
+        span:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
