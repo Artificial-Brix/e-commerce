@@ -8,7 +8,9 @@ export default function navbar() {
   return (
     <nav>
       <div className={classes.Navbar}>
+
         <h1 className={classes.Heading}>EcommerceApp - pratikkkk</h1>
+
 
         <div className={classes.HeaderRight}>
           <form>
