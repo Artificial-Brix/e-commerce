@@ -1,54 +1,85 @@
-.Navbar {
-  background-color: #ffffff;
-  height: 10vh;
-  box-shadow: 0px 4px 8px rgba(143, 143, 143, 0.25);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav {
   position: fixed;
   width: 100%;
 
-  .Heading {
-    font-family: "Pacifico", cursive;
-    color: #386fa4;
-    text-shadow: 0px 4px 16px rgba(84, 84, 84, 0.25);
-    margin-left: 3vw;
-  }
-
-  .HeaderRight {
+  .FormComponent {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-right: 7vw;
 
-    form {
-      display: flex;
-      margin-right: 7vw;
+    input[type="text"] {
+      padding: 7px;
+      border: 1px solid black;
+      border-right: none;
+      font-size: 1.1rem;
 
-      input[type="text"] {
-        padding: 7px;
-        border: 1px solid black;
-        border-right: none;
-        font-size: 1.1rem;
-
-        &:focus{
-          outline: none;
-        }
-      }
-
-      button {
-        padding: 8px;
-        background: #386fa4;
-        color: white;
-        border: none;
+      &:focus {
+        outline: none;
       }
     }
 
-    .HeaderRightIcons {
+    button {
+      padding: 8px;
+      background: #386fa4;
+      color: white;
+      border: none;
+    }
+
+    @media (max-width: 750px) {
+      & {
+        margin-right: 0px;
+        margin: 3px;
+      }
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+  }
+
+  .Navbar {
+    background-color: #ffffff;
+    height: 10vh;
+    box-shadow: 0px 4px 8px rgba(143, 143, 143, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position: fixed;
+    // width: 100%;
+
+    .Heading {
+      font-family: "Pacifico", cursive;
+      color: #386fa4;
+      text-shadow: 0px 4px 16px rgba(84, 84, 84, 0.25);
+      margin-left: 3vw;
+    }
+
+    .HeaderRight {
       display: flex;
-      justify-content: space-around;
-      width: 10vw;
-      margin-right: 4vw;
-      text-decoration: none;
+      justify-content: space-between;
+      align-items: center;
+
+      .HeaderRightIcons {
+        display: flex;
+        justify-content: space-around;
+        width: 10vw;
+        margin-right: 4vw;
+        text-decoration: none;
+
+        .SearchButton {
+          color: #386fa4;
+          border: none;
+          background: white;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        @media (max-width: 750px) {
+          & {
+            min-width: 35vw;
+          }
+        }
+      }
     }
   }
 }
