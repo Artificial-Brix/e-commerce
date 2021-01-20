@@ -1,0 +1,45 @@
+.ctr {
+  margin-top: 2rem;
+  width: 25rem;
+  border: 2px solid blue;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #4a4a4a;
+  padding: 1rem 0.8rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 16px #d6d6d6;
+}
+.image {
+  align-self: center;
+}
+.name {
+  font-family: "Inter", sans-serif;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #133c55;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.AR {
+  padding: 0.1rem 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.pri_qnt {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.qnt {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 2rem;
+}
